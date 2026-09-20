@@ -1,0 +1,31 @@
+//Write a program that demonstrates the use of basic inpit/output function(scanf and printf)for handling different data types such as int,float,char,and double.
+
+#include <stdio.h>
+int main(){
+    int a ; float b; double c; char ch; char name[50];
+
+    printf("Enter the integer: ");
+    scanf("%d" ,&a);
+
+    printf("Enter a float value: ");
+    scanf("%f" ,&b);
+
+    printf("Enter a double value: ");
+    scanf("%lf" ,&c);
+
+    printf("Enter a single character: ");
+    scanf(" %c" ,&ch);
+
+    printf("Enter a string (name): ");
+    scanf("%s" ,name);
+
+    printf("\n---Output ---\n");
+    printf("Integer entered : %d\n", a);
+    printf("Float entered   : %.2f\n" , b);
+    printf("Double entered  : %.21f\n" , c);
+    printf("Character entered : %c\n" , ch);
+    printf("String entered : %s\n" , name);
+
+
+    return 0 ;
+}
