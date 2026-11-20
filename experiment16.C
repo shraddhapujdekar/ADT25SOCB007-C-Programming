@@ -14,9 +14,8 @@
 		scanf("%s", s.name);
 		printf("Enter marks in 3 subjects: ");
 		for (i = 0; i < 3; i++) {
-    			scanf("%f", &s.marks[i]);
-			total += s.marks[i];
-			}
+    	scanf("%f", &s.marks[i]);
+		total += s.marks[i];}
 		average = total / 3;
 		printf("\n--- Student Details ---\n");
 		printf("Roll Number : %d\n", s.rollNo);
